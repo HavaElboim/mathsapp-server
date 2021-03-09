@@ -4,7 +4,10 @@
   "description": "server for mathsapp to host sockets and accounts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm i && npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/HavaElboim/mathsapp-server/issues"
   },
-  "homepage": "https://github.com/HavaElboim/mathsapp-server#readme"
+  "homepage": "https://github.com/HavaElboim/mathsapp-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.19"
+  }
 }
