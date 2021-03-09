@@ -21,8 +21,6 @@ app.use(cors());
 
 const userSchema = new mongoose.Schema({
   userType: String, //whether the user is a student or a teacher
-  firstName: String,
-  lastName: String,
   email: String,
   userName: String,
   phoneNum: Number,
